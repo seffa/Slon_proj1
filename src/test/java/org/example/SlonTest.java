@@ -1,4 +1,5 @@
-import org.example.Slon;
+package org.example;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,6 +12,7 @@ class SlonTest {
         assertTrue(response.contains("\"Привет\""));
         assertTrue(response.contains("А ты купи слона!"));
     }
+
     @Test
     void helpCommandReturnsGreeting() {
         Slon slon = new Slon();
@@ -24,5 +26,3 @@ class SlonTest {
         assertFalse(slon.isExitCommand("Привет"));
     }
 }
-
-
